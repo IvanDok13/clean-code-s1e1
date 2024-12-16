@@ -31,13 +31,14 @@
   margin: 0 auto 0;
 }
 
-.task {
+.task,
+.label-task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.add-tasks__item {
+.add-task {
   display: flex;
 }
 
@@ -51,7 +52,6 @@
   list-style: none;
 }
 
-.task__input,
 .btn {
   outline: none;
 }
@@ -149,7 +149,7 @@
 }
 
 /* Completed */
-.label-completed {
+.completed-tasks .label-task {
   text-decoration: line-through;
   color: #888;
 }
@@ -163,12 +163,12 @@
   display: none;
 }
 
-.edit-mode-imput {
-  display: inline-block;
-  width: 224px;
+.edit-mode .label-task,
+.edit-mode .task {
+  display: none;
 }
 
-.edit-mode-label,
-.todo-mode-imput {
-  display: none;
+.edit-mode .task {
+  display: inline-block;
+  width: 224px;
 }
