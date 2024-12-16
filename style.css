@@ -16,7 +16,7 @@
   width: 100%;
 }
 
-.more-inf {
+.more-info {
   font-family: fantasy, cursive;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .section__list,
-.section-header {
+.section-title {
   list-style: none;
 }
 
@@ -71,7 +71,7 @@
 }
 
 /* Heading */
-.section-header,
+.section-title,
 .label-task-new {
   color: #333;
   font-weight: 700;
