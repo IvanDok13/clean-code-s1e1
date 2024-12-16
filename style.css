@@ -30,7 +30,7 @@
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 .add-tasks__item {
   display: flex;
@@ -117,7 +117,7 @@
   width: 226px;
 }
 .task {
-  width: 226px
+  width: 226px;
 }
 .delete-img {
   height: 2em;
@@ -130,22 +130,22 @@
 
 /* Completed */
 .label-completed {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 .task-completed {
-  display: none
+  display: none;
 };
 
 /* Edit Task */
 .todo-mode-imput {
-  display: none
+  display: none;
 }
 
 .edit-mode-imput {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .edit-mode-label,
