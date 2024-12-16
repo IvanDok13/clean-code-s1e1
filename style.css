@@ -10,7 +10,7 @@
   display: block;
   text-align: right;
 }
-.header   img {
+.header-img {
   width: 100%;
 }
 .more-inf {
@@ -133,6 +133,10 @@
   color: #888;
 }
 
+.task-completed {
+  display: none
+};
+
 /* Edit Task */
 .todo-mode-imput {
   display:none
@@ -143,6 +147,7 @@
   width:224px
 }
 
-.edit-mode-label{
+.edit-mode-label,
+.todo-mode-imput {
   display:none;
 }
