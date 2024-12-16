@@ -1,63 +1,67 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo App</title>
-    <link 
-    href="  https://fonts.googleapis.com/css?family=Lato:300,400,700" 
-    rel="  stylesheet">
-    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" media="screen" />
   </head>
 
   <body class="body">
-    <div class="header">
-      <img class="header-img" src="./eisenhower-matrix.jpg">
-      <a class="  more-info"
-      href="https://goal-life.com/page/method/matrix-eisenhower">
-        Want more details?
-      </a>
-    </div>
-    <div class="main">
-      <p id="add-task"  >
-        <label class="label-task label-task-new" for="new-task">Add Item</label>
+    <header class="header">
+      <img class="header-img" src="./eisenhower-matrix.jpg" />
+      <a class="more-info" href="https://goal-life.com/page/method/matrix-eisenhower"> Want more details? </a>
+    </header>
+    <main class="main">
+      <section class="add-tasks">
+        <h3 class="section-title" for="new-task">Add Item</h3>
         <div class="add-tasks__item">
-          <input id="  new-task"  class="task__input task" type="text">
-          <button class="btn">Add</button>
+          <p id="add-task">
+            <input id="  new-task" class="task__input task" type="text" />
+            <button class="btn">Add</button>
+          </p>
         </div>
-      </p>
-      <h3 class="section-title">Todo</h3>
-      <ul class="section__ul" id="  incomplete-tasks"  >
-        <li class="section__list">
-          <input class="task__input checkbox" type="  checkbox"  >
-          <label class="label-task">Pay Bills</label>
-          <input type="text" class="task__input task todo-mode-imput">
-          <button class="btn edit">Edit</button>
-          <button class="btn delete">
-            <img class="delete-img" src="./remove.svg">
-          </button>
-        </li>
-        <li class="section__list edit-mode">
-          <input class="task__input checkbox" type="checkbox">
-          <label class="label-task edit-mode-label">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task__input task edit-mode-imput">
-          <button class="btn edit"  >Save</button>
-          <button class="btn delete">
-            <img class="delete-img" src="./remove.svg">
-          </button>
-        </li>
-      </ul>
-      <h3 class="section-title">Completed</h3>
-      <ul class="section__ul" id="completed-tasks">
-        <li class="section__list">
-          <input class="task__input checkbox" type="checkbox" checked>
-          <label class="label-task label-completed">See the Doctor</label>
-          <input type="text" class="task__input task task-completed">
-          <button class="btn edit">Edit</button>
-          <button class="btn delete">
-            <img class="delete-img" src="./remove.svg">
-          </button>
-        </li>
-      </ul>
-    </div>
+      </section>
+      <section class="incomplete-tasks">
+        <h3 class="section-title">Todo</h3>
+        <ul class="section__ul" id="  incomplete-tasks">
+          <li class="section__list">
+            <input class="task__input checkbox" type="  checkbox" />
+            <label class="label-task">Pay Bills</label>
+            <input type="text" class="task__input task todo-mode-imput" />
+            <button class="btn edit">Edit</button>
+            <button class="btn delete">
+              <img class="delete-img" src="./remove.svg" />
+            </button>
+          </li>
+          <li class="section__list edit-mode">
+            <input class="task__input checkbox" type="checkbox" />
+            <label class="label-task edit-mode-label">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="task__input task edit-mode-imput" />
+            <button class="btn edit">Save</button>
+            <button class="btn delete">
+              <img class="delete-img" src="./remove.svg" />
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section class="completed-tasks">
+        <h3 class="section-title">Completed</h3>
+        <ul class="section__ul" id="completed-tasks">
+          <li class="section__list">
+            <input class="task__input checkbox" type="checkbox" checked />
+            <label class="label-task label-completed">See the Doctor</label>
+            <input type="text" class="task__input task task-completed" />
+            <button class="btn edit">Edit</button>
+            <button class="btn delete">
+              <img class="delete-img" src="./remove.svg" />
+            </button>
+          </li>
+        </ul>
+      </section>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
